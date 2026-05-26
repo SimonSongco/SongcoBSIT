@@ -11,14 +11,23 @@ namespace SongcoBSIT
         static Dictionary<string,double> CarbonFootprint = new Dictionary<string,double>();
         static Stack<string> EcoActivities = new Stack<string>();
 
-        static Dictionary<string,double> AddCarbon(string name, double value)
+        static void AddCarbon()
         {
+            Console.Write("Add Your Carbon Footprint: ");
+            string name = Console.ReadLine();
 
+            Console.Write("Add Your Carbon CO2 in KG: ");
+            double value = Convert.ToDouble(Console.ReadLine());
+
+            CarbonFootprint.Add(name, value);
         }
 
-        static Stack<string> AddEcoActivities(string name, double value)
+        static void AddEcoActivities()
         {
+            Console.Write("Add Your Recent Eco Activity: ");
+            string activity = Console.ReadLine();
 
+            EcoActivities.Push(activity);
         }
 
         static void Main(string[] args)
@@ -60,8 +69,10 @@ namespace SongcoBSIT
                 switch (Choice)
                 {
                     case "1":
+                        AddCarbon();
                         break;
                     case "2":
+                        AddEcoActivities();
                         break;
                     default:
                         Loop = false;
