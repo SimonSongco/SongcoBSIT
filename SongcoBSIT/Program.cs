@@ -20,6 +20,7 @@ namespace SongcoBSIT
             double value = Convert.ToDouble(Console.ReadLine());
 
             CarbonFootprint.Add(name, value);
+            Console.Clear();
         }
 
         static void AddEcoActivities()
@@ -28,6 +29,7 @@ namespace SongcoBSIT
             string activity = Console.ReadLine();
 
             EcoActivities.Push(activity);
+            Console.Clear();
         }
 
         static void Main(string[] args)
@@ -69,9 +71,11 @@ namespace SongcoBSIT
                 switch (Choice)
                 {
                     case "1":
+                        Console.Clear();
                         AddCarbon();
                         break;
                     case "2":
+                        Console.Clear();
                         AddEcoActivities();
                         break;
                     default:
