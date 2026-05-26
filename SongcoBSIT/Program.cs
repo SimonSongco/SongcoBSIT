@@ -10,7 +10,7 @@ namespace SongcoBSIT
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("New Lines");
         }
     }
 }
