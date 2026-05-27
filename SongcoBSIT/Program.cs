@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,11 +47,18 @@ namespace SongcoBSIT
 
             while (Loop)
             {
+                double TotalCarbon = 0;
+
                 Console.WriteLine("=== Carbon Emmisions ===");
                 foreach (var item in CarbonFootprint)
                 {
                     Console.WriteLine($"{item.Key}: {item.Value} KG in CO2");
+                    TotalCarbon = item.Value + TotalCarbon;
                 }
+
+                Console.WriteLine();
+                Console.WriteLine($"Total CO2 Produced: {TotalCarbon} KG");
+
 
                 Console.WriteLine();
                 Console.WriteLine("=== Recent Eco Activities ===");
