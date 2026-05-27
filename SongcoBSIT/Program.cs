@@ -14,8 +14,14 @@ namespace SongcoBSIT
 
         static void AddCarbon()
         {
+            Console.WriteLine("Press Enter to Return");
             Console.Write("Add Your Carbon Footprint: ");
             string name = Console.ReadLine();
+
+            if (name == "")
+            {
+                return;
+            }
 
             Console.Write("Add Your Carbon CO2 in KG: ");
             double value = Convert.ToDouble(Console.ReadLine());
@@ -26,8 +32,14 @@ namespace SongcoBSIT
 
         static void AddEcoActivities()
         {
+            Console.WriteLine("Press Enter to Return");
             Console.Write("Add Your Recent Eco Activity: ");
             string activity = Console.ReadLine();
+
+            if (activity == "")
+            {
+                return;
+            }
 
             EcoActivities.Push(activity);
             Console.Clear();
@@ -59,9 +71,9 @@ namespace SongcoBSIT
                 Console.WriteLine();
                 Console.WriteLine($"Total CO2 Produced: {TotalCarbon} KG");
 
-
                 Console.WriteLine();
                 Console.WriteLine("=== Recent Eco Activities ===");
+
                 int Count = 1;
                 foreach (var item in EcoActivities)
                 {
