@@ -8,6 +8,7 @@ namespace SongcoBSIT
 {
     internal class Program
     {
+        aaaa
         static Dictionary<string,double> CarbonFootprint = new Dictionary<string,double>();
         static Stack<string> EcoActivities = new Stack<string>();
 
