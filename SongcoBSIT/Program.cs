@@ -11,7 +11,7 @@ namespace SongcoBSIT
     {
         static Dictionary<string,double> CarbonFootprint = new Dictionary<string,double>();
         static Stack<string> EcoActivities = new Stack<string>();
-
+        
         static void AddCarbon()
         {
             Console.WriteLine("Press Enter to Return");
