@@ -26,7 +26,14 @@ namespace SongcoBSIT
             Console.Write("Add Your Carbon CO2 in KG: ");
             double value = Convert.ToDouble(Console.ReadLine());
 
-            CarbonFootprint.Add(name, value);
+            if (CarbonFootprint.ContainsKey(name))
+            {
+                CarbonFootprint[name] += value;
+            }
+            else
+            {
+                CarbonFootprint.Add(name, value);
+            }
             Console.Clear();
         }
 
