@@ -80,6 +80,8 @@ namespace SongcoBSIT
 
                 Console.WriteLine();
                 Console.WriteLine("=== Recent Eco Activities ===");
+                Console.WriteLine("Most Recent: Lowest #");
+                Console.WriteLine();
 
                 int Count = 1;
                 foreach (var item in EcoActivities)
@@ -89,7 +91,7 @@ namespace SongcoBSIT
                 }
 
                 Console.WriteLine();
-                Console.WriteLine("== Choose Which to Add");
+                Console.WriteLine("=== Choose Which to Add ===");
                 Console.WriteLine("[1] Carbon Emmisions");
                 Console.WriteLine("[2] Eco Activities");
                 Console.Write("Enter Your Choice: ");
