@@ -42,7 +42,7 @@ namespace SongcoBSIT
             Console.WriteLine("Press Enter to Return");
             Console.Write("Add Your Recent Eco Activity: ");
             string activity = Console.ReadLine();
-
+            
             if (activity == "")
             {
                 return;
